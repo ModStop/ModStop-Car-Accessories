@@ -1,6 +1,38 @@
-.nav-top{
+.first-navbar{
     background-color: #f7f7f7;
 }
+
+.second-nav {
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .second-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .second-nav li {
+    margin: 0 15px;
+    display: flex;
+    float: left;
+    white-space: nowrap;
+  }
+  
+  .second-nav a {
+    text-decoration: none;
+    color: #333;
+    
+  }
+
+
 
 .btn, .cart-color{
     color: #6c6c6c;
@@ -45,6 +77,9 @@
     background-color: #f0f0f0;
 }
 
+section{
+    display: block;
+}
 
 
 
