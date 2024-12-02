@@ -1,0 +1,50 @@
+.nav-top{
+    background-color: #f7f7f7;
+}
+
+.btn, .cart-color{
+    color: #6c6c6c;
+    
+} 
+
+.bi-cart3, .bi-person{
+    font-size: 25px;
+}
+
+.navbar-nav{
+    color: #6c6c6c;
+    display: flex;
+    align-items: center;
+} 
+
+.cart-count{
+   position: absolute;
+    margin: 10px auto;  
+    font-size: 7px;
+}
+
+.navbar-nav :hover{
+    color: #5b2333;
+}
+
+.navbar-nav, .btn{
+    padding: 0 10px;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+}
+
+.form-control{ 
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn:hover{
+    background-color: #f0f0f0;
+}
+
+
+
+
