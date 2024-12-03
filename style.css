@@ -16,8 +16,8 @@ body {
 
 .wrapper {
     width: 420px;
-    background: #5b2333;;
-    color: #f7f4f3;
+    background: #f7f4f3;;
+    color: #564d4a;
     border-radius: 10px;
     padding: 30px 40px;
 }
@@ -74,7 +74,7 @@ body {
 }
 
 .remember-forgot a {
-    color: #f7f4f3;
+    color: #564d4a;
     text-decoration: none;
 }
 
@@ -107,6 +107,7 @@ body {
     color: #f7f4f3;
     text-decoration: none;
     font-weight: 600;
+
 }
 
 .signup-link h:hover {
