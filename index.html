@@ -62,29 +62,48 @@
 </section>
 <br>
 
-<!--Hero Section-->
-<section class="hero-section">
-  <div class="slider">
-    <div class="slide active">
+<!-- Hero Section -->
+<!-- Hero Section -->
+<div class="slideshow-container">
+  <div class="mySlides active">
+    <div class="numbertext">1 / 3</div>
+    <div class="bg-overlay">
       <video autoplay muted loop>
-        <source src="C:\Users\shshi\OneDrive\Desktop\UoC\Year2\Semester 3\WebDesign\assignment\ModStop-Car-Accessories\media\herovideo.mp4" type="video/mp4">
+        <source src="media/herovideo.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
-    <div class="slide">
-      <img src="C:\Users\shshi\OneDrive\Desktop\UoC\Year2\Semester 3\WebDesign\assignment\ModStop-Car-Accessories\media\focpum_detail_2000x.png" alt="Image 2">
+    <div class="text">
+      <h2>Welcome to ModStop</h2>
+      <p>Your One-Stop Shop for Premium Car Accessories</p>
+      <a href="store.html" class="btn btn-primary">Shop Now</a>
     </div>
   </div>
-  <div class="slider-nav">
-    <button class="prev-btn">&#10094</button>
-    <button class="next-btn">&#10095</button>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <div class="bg-overlay"></div>
+    <img src="C:\Users\shshi\OneDrive\Desktop\UoC\Year2\Semester 3\WebDesign\assignment\ModStop-Car-Accessories\media\focpum_detail_2000x.png" alt="Image 2">
+    <div class="text">
+      <h2>Welcome to ModStop</h2>
+      <p>Your One-Stop Shop for Premium Car Accessories</p>
+      <a href="store.html" class="btn btn-primary">Shop Now</a>
+    </div>
   </div>
-  <div class="slide content">
-    <h2>Welcome to ModStop</h2>
-    <p>Your One-Stop Shop for Premium Car Accessories</p>
-    <a href="store.html" class="btn btn-primary">Shop Now</a>
-  </div>
-  </section>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
+
+
 
 
 
@@ -94,27 +113,97 @@
 </body>
 
 <script>
-  const slides = document.querySelectorAll('.slide');
-  const prevBtn = document.querySelector('.prev-btn');
-  const nextBtn = document.querySelector('.next-btn');
-let currentSlide = 0;
 
+ /*let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+setInterval(() => {
+  plusSlides(1);
+}, 5000);*/
+
+let slideIndex = 0;
+const slides = document.getElementsByClassName("mySlides");
+const dots = document.getElementsByClassName("dot");
+
+// Show a specific slide
+function showSlide(n) {
+  slideIndex = (n + slides.length) % slides.length;
+
+  // Remove active class from all slides and dots
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+    dots[i].classList.remove("active");
+  }
+
+  // Add active class to the current slide and dot
+  slides[slideIndex].classList.add("active");
+  dots[slideIndex].classList.add("active");
+}
+
+// Show the next slide
 function nextSlide() {
-  slides[currentSlide].classList.remove('active');
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].classList.add('active'); Â  
-
+  showSlide(slideIndex + 1);
 }
 
+// Show the previous slide
 function prevSlide() {
-  slides[currentSlide].classList.remove('active');
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  slides[currentSlide].classList.add('active'); Â  
-
+  showSlide(slideIndex - 1);
 }
-setInterval(nextSlide, 5000);
 
-prevBtn.addEventListener('click', prevSlide);
-nextBtn.addEventListener('click', nextSlide);
+// Automatically rotate slides every 5 seconds
+let autoRotate = setInterval(nextSlide, 5000);
+
+// Pause auto-rotation when the user interacts
+function pauseAutoRotate() {
+  clearInterval(autoRotate);
+  autoRotate = setInterval(nextSlide, 5000); // Restart auto-rotation
+}
+
+// Attach event listeners for manual navigation
+document.querySelector(".prev").addEventListener("click", () => {
+  pauseAutoRotate();
+  prevSlide();
+});
+
+document.querySelector(".next").addEventListener("click", () => {
+  pauseAutoRotate();
+  nextSlide();
+});
+
+// Attach event listeners to dots
+for (let i = 0; i < dots.length; i++) {
+  dots[i].addEventListener("click", () => {
+    pauseAutoRotate();
+    showSlide(i);
+  });
+}
+
+// Initialize the first slide
+showSlide(slideIndex);
+
 </script>
 </html>
