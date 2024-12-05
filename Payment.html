@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - ModStop Car Accessories</title>
+    </head>
+    <style>
+        body {
+            font-family: Sans-serif, monospace;
+            background-color: #ffffff;      
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .payment-container {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px hwb(342 12% 62% / 0.2);
+            width: 80%;
+            
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #000000;
+            text-align: left;
+        }
+        .items-section, .form-group, .payment-summary {
+            margin-bottom: 20px;
+        }
+        .items-section table {
+            width: 10%;
+            border-collapse: collapse;
+        }
+        .items-section th, .items-section td {
+            border: 1px solid #fd0000;
+            padding: 100px;
+            text-align: left;
+            
+        }
+        .items-section th {
+            background-color: #5b2333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #000000;
+        }
+        input, select {
+            color: #000000;
+            width: 150%;
+            padding: 10px;
+            border: 0.5px solid #d4d4d4;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input::placeholder {
+            color: #bebebe;
+            font-style: italic;
+        }
+            
+        button {
+            float: right;
+            width: 20%;
+            padding: 10px;
+            background-color: #5b2333;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #007bff;
+        }
+    </style>
+<body>
+    
+    <h2>Order Summary</h2>
+            <div>
+                <img src=">
+                <div style="margin-left: 10px;">
+            </div>
+    
+        <div>
+        <button id="view-more-btn" onclick="toggleViewMore()">View More</button>
+        </div>
+
+        <script>
+            function toggleViewMore() {
+                const moreItems = document.querySelectorAll('.more-item');
+                const viewMoreBtn = document.getElementById('view-more-btn');
+        
+                moreItems.forEach(item => {
+                    item.style.display = item.style.display === 'none' ? '' : 'none';
+                });
+        
+                viewMoreBtn.textContent = 
+                    viewMoreBtn.textContent === 'View More' ? 'View Less' : 'View More';
+            }
+        </script><br>
+
+        <div>
+            <p> Subtotal: $49.98 <span class="price"></span></p>
+            <p> Shipping Fee: $5.00 <span class="price"></span></p>
+            <p> Total: $54.98 <span class="price"></span></p>
+        </div>
+
+        <div class="payment-container">
+        <form action="/submit-payment" method="POST">
+            <div class="form-group">
+                <label for="payment-method">Payment Method</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="debit-card">Debit Card</option>
+                    <option value="touchngo">Touch'nGo</option>
+                    <option value="online-banking">Online Banking</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="9436 4587 1209 4302" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="month" id="expiry-date" name="expiry-date" placeholder="YYYY-MM-DD">
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+            </div>
+            <button type="submit">Pay</button>
+        </div>
+        </form>
+
+        <footer>
+            <p>&copy; 2024 ModStop Car Accessories </p>
+        </footer>
+
+</body>
+</html>
