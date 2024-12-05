@@ -3,86 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Payment_style.css">
     <title>Payment - ModStop Car Accessories</title>
-    </head>
-    <style>
-        body {
-            font-family: Sans-serif, monospace;
-            background-color: #ffffff;      
-            justify-content: space-between;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
-
-        .payment-container {
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 5px hwb(342 12% 62% / 0.2);
-            width: 80%;
-            
-        }
-        h2 {
-            margin-bottom: 20px;
-            color: #000000;
-            text-align: left;
-        }
-        .items-section, .form-group, .payment-summary {
-            margin-bottom: 20px;
-        }
-        .items-section table {
-            width: 10%;
-            border-collapse: collapse;
-        }
-        .items-section th, .items-section td {
-            border: 1px solid #fd0000;
-            padding: 100px;
-            text-align: left;
-            
-        }
-        .items-section th {
-            background-color: #5b2333;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            color: #000000;
-        }
-        input, select {
-            color: #000000;
-            width: 150%;
-            padding: 10px;
-            border: 0.5px solid #d4d4d4;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-
-        input::placeholder {
-            color: #bebebe;
-            font-style: italic;
-        }
-            
-        button {
-            float: right;
-            width: 20%;
-            padding: 10px;
-            background-color: #5b2333;
-            border: none;
-            border-radius: 4px;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #007bff;
-        }
-    </style>
+</head>
+    
 <body>
     
+    <div class="container">
     <h2>Order Summary</h2>
             <div>
                 <img src=">
@@ -90,7 +17,7 @@
             </div>
     
         <div>
-        <button id="view-more-btn" onclick="toggleViewMore()">View More</button>
+        <button id="view-more-btn" onclick="toggleViewMore()">View More ▼</button>
         </div>
 
         <script>
@@ -103,11 +30,11 @@
                 });
         
                 viewMoreBtn.textContent = 
-                    viewMoreBtn.textContent === 'View More' ? 'View Less' : 'View More';
+                    viewMoreBtn.textContent === 'View More ▼' ? 'View Less ▲ ' : 'View More ▼';
             }
         </script><br>
 
-        <div>
+        <div class="summary"> 
             <p> Subtotal: $49.98 <span class="price"></span></p>
             <p> Shipping Fee: $5.00 <span class="price"></span></p>
             <p> Total: $54.98 <span class="price"></span></p>
@@ -137,12 +64,14 @@
                 <input type="text" id="cvv" name="cvv" placeholder="123" required>
             </div>
             <button type="submit">Pay</button>
-        </div>
-        </form>
 
-        <footer>
-            <p>&copy; 2024 ModStop Car Accessories </p>
-        </footer>
+            <footer>
+                <p>&copy; 2024 ModStop Car Accessories </p>
+            </footer>
+
+        </div>
+        </div>
+        </form> 
 
 </body>
 </html>
