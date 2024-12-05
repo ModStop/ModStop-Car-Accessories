@@ -82,8 +82,14 @@
     
 } 
 
-.bi-cart3, .bi-person{
-    font-size: 25px;
+.bi-cart2{
+    font-size: 21px;
+}
+
+.bi-person {
+  display: flex;
+  padding-top: 3px;
+  font-size: 26px;
 }
 
 .navbar-nav{
