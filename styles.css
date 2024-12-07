@@ -12,7 +12,7 @@
 .second-nav {
     text-align: center;
     padding: 10px;
-    width: 100px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -145,7 +145,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   z-index: 1;
 }
 
-.myslides.active{
+.mySlides.active{
   opacity: 1 !important;
   z-index: 2;
   display: block !important;
@@ -182,10 +182,6 @@ img {vertical-align: middle;}
   transition: opacity 1s ease-in-out;
 }
 
-.mySlides.active {
-  display: block !important; 
-  opacity: 1 !important; 
-}
 
 .mySlides .bg-overlay {
   position: absolute;
@@ -304,6 +300,127 @@ img {vertical-align: middle;}
 .social-links a:hover {
   color: #007bff !important;
 }
+
+body, section{
+  display: block;
+}
+
+/*CSS for login page*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 420px;
+    color: #564d4a;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #564d4a;
+    font-size: 16px;
+    color: #564d4a;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #564d4a;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #564d4a;
+
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 5px; 
+}
+
+.remember-forgot {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #564d4a;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #0b6fad;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px #564d4a;
+    cursor: pointer;
+    font-size: 16px;
+    color: #f7f4f3;
+    font-weight: 600;
+    border-radius: 40px;
+}
+
+.wrapper .signup-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px 0 15px;
+}
+
+.signup-link p a {
+    color: #f7f4f3;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.signup-link h:hover {
+    text-decoration: underline;
+}
+
 
 
 
