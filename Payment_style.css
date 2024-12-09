@@ -11,7 +11,7 @@
 
     .container {
         flex: 1;
-        background: #fff;
+        background: #ffffff;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0px 0px 10px hwb(342 12% 62% / 0.2);
@@ -89,15 +89,15 @@
     }
 
     button:hover {
-        background-color: #000000;
+        background-color: #f24333;
     }
 
     footer {
-        text-align: left; /* Center-align the text */
-        padding: 50px 0; /* Add padding for spacing */
-        font-size: 14px; /* Adjust font size */
-        width: 100%; /* Span the full width of the page */
-        color: #000; /* Footer text color */
+        text-align: left; 
+        padding: 50px 0; 
+        font-size: 14px; 
+        width: 100%; 
+        color: #000; 
         margin-top: 70px; 
     }
     
