@@ -3,41 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Payment_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css\Payment_style.css">
+    <link rel="stylesheet" href="css\styles.css">
     <title>Payment - ModStop Car Accessories</title>
 </head>
     
 <body>
-    
-    <div class="container">
-    <h2>Order Summary</h2>
-            <div>
-                <img src="" alt="">
-                <div style="margin-left: 10px">
+
+    <section>
+        <nav class=" first-navbar navbar navbar-expand-lg nav-top fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="media\logo.jpg" alt="ModStop logo"></a>
+            <button name="unknown" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav me-auto">
+                </div>
+                <ul class="navbar-nav">
+                  <li>
+                      <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search an item" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                      </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="cart.html">
+                            <i class="bi bi-cart2"></i>
+                            <span class="badge bg-danger cart-count">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="authLinks">
+                        <a class="nav-link" href="login.html">
+                          <i class="bi bi-person"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-    
-        <div>
-        <button id="view-more-btn" onclick="toggleViewMore()">View More ▼</button>
         </div>
-
-        <script>
-            function toggleViewMore() {
-                const moreItems = document.querySelectorAll('.more-item');
-                const viewMoreBtn = document.getElementById('view-more-btn');
+      </nav>
+      </section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    
+    <div class="payment-container">
+        <h2>Order Summary</h2>
+            
+    
         
-                moreItems.forEach(item => {
-                    item.style.display = item.style.display === 'none' ? '' : 'none';
-                });
-        
-                viewMoreBtn.textContent = 
-                    viewMoreBtn.textContent === 'View More ▼' ? 'View Less ▲ ' : 'View More ▼';
-            }
-        </script><br>
 
+        
         <div class="summary"> 
-            <p> Subtotal: $49.98 <span class="price"></span></p>
-            <p> Shipping Fee: $5.00 <span class="price"></span></p>
-            <p> Total: $54.98 <span class="price"></span></p>
+            <p> Subtotal: RM 2686.89 <span class="price"></span></p>
+            <p> Shipping Fee: RM 50.00 <span class="price"></span></p>
+            <p> Total: $2736.89 <span class="price"></span></p>
         </div>
 
         <div class="payment-container">
@@ -64,14 +88,40 @@
                 <input type="text" id="cvv" name="cvv" placeholder="123" required>
             </div>
             <button type="submit">Pay</button>
-
-            <footer>
-                <p>&copy; 2024 ModStop Car Accessories </p>
-            </footer>
-
         </div>
         </div>
         </form> 
+    </div>
+
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>ModStop Car Accessories</h5>
+                        <p>Your trusted source for car accessories and modifications.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="about.html" class="text-white">About Us</a></li>
+                            <li><a href="store.html" class="text-white">Store</a></li>
+                            <li><a href="about_us.html" class="text-white">About us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Connect With Us</h5>
+                        <div class="social-links">
+                            <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
