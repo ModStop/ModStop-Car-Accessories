@@ -1,152 +1,174 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Checkout - ModStop Car Accessories</title>
-    <link rel="stylesheet" href="styles.css">
+        <title>ModStop Car Accessories- Checkout</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/styles.css">
 </head>
 
   <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #F7F4F3; /* Primary color */
-            color: #5B2333; /* Secondary color */
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #5B2333; /* Secondary color */
-            color: #FFFFFF;
-            text-align: center;
-            padding: 20px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        button {
-        background-color: #5b2333;
+        .btn-primary {
+        background-color: #6c6c6c;
         border: none;
         color: #ffffff;
-        padding: 10px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
         font-size: 16px;
-        margin: 4px 2px;
         cursor: pointer;
        }
 
-        button:hover {
-        background-colour: #f24333;
-       }
-
-       footer {
-            background-color: #5B2333; /* Secondary color */
-            color: #FFFFFF;
-            text-align: center;
-            padding: 15px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer a {
-            color: #FFFFFF;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
+        .btn-primary:hover {
+        background-color: #5b2333;
+       }   
 </style>
+
+
 
 <body>
     <header>
-        <h1>Checkout</h1>
+        <section>
+            <nav class=" first-navbar navbar navbar-expand-lg nav-top fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="media\logo.jpg" alt="ModStop logo"></a>
+                <button name="unknown" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav me-auto">
+                    </div>
+                    <ul class="navbar-nav">
+                      <li>
+                          <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search an item" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                          </form>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="cart.html">
+                                <i class="bi bi-cart2"></i>
+                                <span class="badge bg-danger cart-count">0</span>
+                            </a>
+                        </li>
+                        <li class="nav-item" id="authLinks">
+                            <a class="nav-link" href="login.html">
+                              <i class="bi bi-person"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+          </section>
     </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
 
     <main>
-        <section class="checkout-form">
-            <h2>Billing Information</h2>
-            <form id="checkout">
-                <label for="name">Full Name :</label>
-                <input type="text" id="name" name="name" required><br>
-
-                <br><label for="email">Email :</label>
-                <input type="email" id="email" name="email" required><br>
-
-                <br><label for="phone number">Phone Number :</label>
-                <input type="number" id="number" name="phone number" required><br>
-
-                <br><label for="address">Shipping Address :</label>
-                <input type="text" id="address" name="address" required><br>
-
-                <br><label for="city">City :</label>
-                <input type="text" id="city" name="city" required><br>
-
-                <br><label for="zip">Zip Code:</label>
-                <input type="text" id="zip" name="zip" required><br>
-
-                <br><label for="country">Country :</label>
-                <input type="text" id="country" name="country" required><br>
-
-                <h2>Payment Information</h2>
-
-                <label for="cardholder-name">Cardholder's Name :</label>
-                <input type="text" id="cardholder-namer" name="cardholder-name" required><br>
-
-                <br><label for="card-number">Card Number :</label>
-                <input type="text" id="card-number" name="card-number" required><br>
-
-                <br><label for="expiry">Expiry Date :</label>
-                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
-
-                <label for="cvv">CVV :</label>
-                <input type="text" id="cvv" name="cvv" required><br>
-
-                <br>
-                <div class="voucher-section">
-                    <label for="voucher">Voucher Code:</label>
-                    <input type="text" id="voucher" name="voucher" placeholder="Enter your voucher code">
-                    <button type="button" onclick="applyVoucher()">Apply</button>
+        <div class="container mt-5 pt-5">
+            <h2 class="mb-4 text-center">Delivery</h2>
+            <div class="card mt-4" id="cartSummary">
+                <div class="card-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <form class="row g-2">
+                                <div class="col-md-6">
+                                  <label for="inputEmail4" class="form-label">Email</label>
+                                  <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputPassword4" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputFName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="inputFName">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <label for="inputLName" class="form-label">Last Name</label>
+                                    <input type="password" class="form-control" id="inputLName">
+                                  </div>
+                                <div class="col-md-6">
+                                  <label for="inputAddress" class="form-label">Address</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputAddress2" class="form-label">Address 2</label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputCity" class="form-label">City</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="inputState" class="form-label">State</label>
+                                  <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>Selangor</option>
+                                    <option>Malacca</option>
+                                    <option>Johor</option>
+                                    <option>Kedah</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-2">
+                                  <label for="inputZip" class="form-label">Zip</label>
+                                  <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                      I wish to receive new updates and promotions
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                  <button type="submit" class="btn btn-primary">Pay now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <br><button type="submit">Complete Purchase</button>
-            </form>
-        </section>
-
-        <section class="order-summary">
-            <h2>Order Summary</h2>
-            <ul>
-                <li>Car Accessory 1 - $29.99</li>
-                <li>Car Accessory 2 - $19.99</li>
-                <li>Shipping Fee - $5.00</li>
-                <li><strong>Total: $54.98</strong></li>
-                <li id="discount" style="display: none;">Discount Applied - $0.00</li>
-                <li><strong id="total">Total: $54.98</strong></li>
-           </ul>
-        </section>
+            </div>
+        </div>
     </main>
 
-     <footer>
-        <p>&copy; 2024 Modstop. <a href="#">Contact Us</a> | <a href="#">Privacy Policy</a></p>
-    </footer>
-                  
-    <script>
-        function applyVoucher() {
-            const voucherInput = document.getElementById('voucher').value;
-            const discountElement 
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>ModStop</h5>
+                    <p>Your trusted source for car accessories and modifications.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="store.html" class="text-white">Store</a></li>
+                        <li><a href="#" class="text-white">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </footer>
       
-      </body> 
-      </html>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+
+
+</body> 
+</html>
