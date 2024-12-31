@@ -2,7 +2,7 @@ const products = [
     {
         id: 1,
         name: 'Racing seats',
-        price: 199.99,
+        price: 1199.99,
         category: 'interior',
         image: 'media\\Seats.jpg',
         description: 'Designed for optimal support and comfort during high-performance driving.'
@@ -10,7 +10,7 @@ const products = [
     {
         id: 2,
         name: 'Performance sway bars',
-        price: 5399.99,
+        price: 399.99,
         category: 'exterior',
         image: 'media\\Sway bars.JPG',
         description: 'Reduces body roll and improves handling, especially during cornering.'
@@ -26,7 +26,7 @@ const products = [
     {
         id: 4,
         name: 'High Flow fuel pump',
-        price: 269.99,
+        price: 2269.99,
         category: 'performance',
         image: 'media\\High-Flow-Fuel-Pump.jpg',
         description: 'Supplies adequate fuel flow to support increased engine power and performance.'
@@ -34,7 +34,7 @@ const products = [
     {
         id: 5,
         name: 'Short throw shifter',
-        price: 199.99,
+        price: 399.99,
         category: 'performance',
         image: 'media\\short-shifter.png',
         description: 'Reduces shift throw for quicker gear changes and improved driving experience.'
@@ -42,7 +42,7 @@ const products = [
     {
         id: 6,
         name: 'Performance clutch',
-        price: 199.99,
+        price: 3199.99,
         category: 'performance',
         image: 'media\\Clutch.jpg',
         description: 'Designed to handle increased torque and horsepower, offering improved durability and responsiveness.'
@@ -58,7 +58,7 @@ const products = [
     {
         id: 9,
         name: 'Supercharger',
-        price: 1299.99,
+        price: 8299.99,
         category: 'performance',
         image: 'media\\Supercharger.jpeg',
         description: 'Forced induction systems that increase the amount of air entering the engine, resulting in significant increases in horsepower and torque.'
@@ -66,7 +66,7 @@ const products = [
     {
         id: 10,
         name: 'Performance Suspension',
-        price: 599.99,
+        price: 3599.99,
         category: 'performance',
         image: 'media\\Suspension.jpg',
         description: 'Upgraded shocks, struts, and springs that improve handling, cornering, and overall vehicle control.'
@@ -74,7 +74,7 @@ const products = [
     {
         id: 11,
         name: 'High performance brakes',
-        price: 299.99,
+        price: 2299.99,
         category: 'performance',
         image: 'media\\Brakes.png',
         description: 'Upgraded brake pads, rotors, and calipers that provide improved stopping power and fade resistance.'
@@ -82,7 +82,7 @@ const products = [
     {
         id: 12,
         name: 'Performance chip tuner',
-        price: 199.99,
+        price: 1199.99,
         category: 'performance',
         image: 'media\\ChipTuner.png',
         description: 'A small electronic device that plugs into the car’s computer and re-maps the engine’s computer software to optimize performance. This can increase horsepower, torque, and fuel efficiency.'
@@ -90,7 +90,7 @@ const products = [
     {
         id: 13,
         name: 'Performance exhaust systems',
-        price: 169.99,
+        price: 4169.99,
         category: 'performance',
         image: 'media\\Exhaust.jpg',
         description: 'Replaces the factory exhaust system with a high-flow design that reduces backpressure and improves engine breathing. This can increase horsepower, torque, and improve the sound of the engine.'
@@ -98,7 +98,7 @@ const products = [
     {
         id: 14,
         name: 'Cold air intake',
-        price: 159.99,
+        price: 759.99,
         category: 'performance',
         image: 'media\\Cold-intake.jpg',
         description: 'Replaces the restrictive factory air intake system with a high-flow design that draws cooler, denser air into the engine. This can increase horsepower and torque.'
