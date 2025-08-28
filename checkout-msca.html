@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ModStop Car Accessories- Checkout</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/styles.css">
+</head>
+
+  <style>
+        .btn-primary {
+        background-color: #6c6c6c;
+        border: none;
+        color: #ffffff;
+        font-size: 16px;
+        cursor: pointer;
+       }
+
+        .btn-primary:hover {
+        background-color: #5b2333;
+       }   
+</style>
+
+
+
+<body>
+    <header>
+        <section>
+            <nav class=" first-navbar navbar navbar-expand-lg nav-top fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="media\logo.jpg" alt="ModStop logo"></a>
+                <button name="unknown" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav me-auto">
+                    </div>
+                    <ul class="navbar-nav">
+                      <li>
+                          <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search an item" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                          </form>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="cart.html">
+                                <i class="bi bi-cart2"></i>
+                                <span class="badge bg-danger cart-count">0</span>
+                            </a>
+                        </li>
+                        <li class="nav-item" id="authLinks">
+                            <a class="nav-link" href="login.html">
+                              <i class="bi bi-person"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+          </section>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <main>
+        <div class="container mt-5 pt-5">
+            <h2 class="mb-4 text-center">Delivery</h2>
+            <div class="card mt-4" id="cartSummary">
+                <div class="card-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <form class="row g-2">
+                                <div class="col-md-6">
+                                  <label for="inputEmail4" class="form-label">Email</label>
+                                  <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputPassword4" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputFName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="inputFName">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <label for="inputLName" class="form-label">Last Name</label>
+                                    <input type="password" class="form-control" id="inputLName">
+                                  </div>
+                                <div class="col-md-6">
+                                  <label for="inputAddress" class="form-label">Address</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputAddress2" class="form-label">Address 2</label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputCity" class="form-label">City</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="inputState" class="form-label">State</label>
+                                  <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>Selangor</option>
+                                    <option>Malacca</option>
+                                    <option>Johor</option>
+                                    <option>Kedah</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-2">
+                                  <label for="inputZip" class="form-label">Zip</label>
+                                  <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                      I wish to receive new updates and promotions
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                <button class="btn btn-primary" onclick="window.location.href='payment.html'; return false">Pay now</button>
+                                  
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>ModStop</h5>
+                    <p>Your trusted source for car accessories and modifications.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="store.html" class="text-white">Store</a></li>
+                        <li><a href="#" class="text-white">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </footer>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+
+
+</body> 
+</html>

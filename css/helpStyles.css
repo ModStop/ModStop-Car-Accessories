@@ -1,0 +1,299 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Contact Section */
+.contact-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #F7F4F3; /* Primary color for the section background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #5B2333; /* Secondary color for headings */
+    margin-bottom: 20px;
+}
+
+.contact-section form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5B2333; /* Secondary color for form labels */
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-section form button {
+    padding: 10px 20px;
+    background-color: #5B2333; /* Secondary color for the button */
+    color: #F7F4F3; /* Primary color for the button text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-section form button:hover {
+    background-color: #441922; /* Slightly darker shade of secondary color */
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #F7F4F3; /* Primary color for the section background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+    text-align: center;
+    color: #5B2333; /* Secondary color for headings */
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.faq-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #5B2333; /* Secondary color for clickable FAQ headings */
+}
+
+.faq-item p {
+    display: none;
+    color: #333; /* Text color for FAQ content */
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.faq-item.active p {
+    display: block;
+}
+
+/* Hover effect for FAQ questions */
+.faq-item:hover {
+    background-color: #5B2333;
+    color: #fff;
+}
+
+/* Return Policy Section */
+.return-policy-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #F7F4F3; /* Primary color for the section background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.return-policy-section h2 {
+    text-align: center;
+    color: #5B2333; /* Secondary color for headings */
+    margin-bottom: 20px;
+}
+
+.return-policy-section p {
+    color: #333; /* Text color */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.return-policy-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+}
+
+.return-policy-section li {
+    margin-bottom: 10px;
+}
+
+.return-policy-section a {
+    color: #5B2333; /* Secondary color for links */
+    text-decoration: none;
+}
+
+.return-policy-section a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Tablets and below (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        font-size: 20px;
+    }
+
+    .contact-section, .faq-section, .return-policy-section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .contact-section form input,
+    .contact-section form textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .contact-section form button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* For Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    header {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+
+    .contact-section, .faq-section, .return-policy-section {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .contact-section form input,
+    .contact-section form textarea {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .contact-section form button {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+
+    .return-policy-section h2, .faq-section h2 {
+        font-size: 18px;
+    }
+
+    .faq-item h3 {
+        font-size: 16px;
+    }
+}
+.track-order-section, .help-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #F7F4F3; /* Primary color for the section background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.track-order-section h2, .help-section h3 {
+    color: #5B2333; /* Secondary color for headings */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.track-order-section form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5B2333;
+}
+
+.track-order-section form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.track-order-section form button {
+    padding: 10px 20px;
+    background-color: #5B2333;
+    color: #F7F4F3;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.track-order-section form button:hover {
+    background-color: #441922;
+}
+.cancel-order-section, .help-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #F7F4F3; /* Primary color for the section background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cancel-order-section h2, .help-section h3 {
+    color: #5B2333; /* Secondary color for headings */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cancel-order-section form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5B2333;
+}
+
+.cancel-order-section form input, 
+.cancel-order-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cancel-order-section form button {
+    padding: 10px 20px;
+    background-color: #5B2333;
+    color: #F7F4F3;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel-order-section form button:hover {
+    background-color: #441922;
+}
+
+
+
+
